@@ -6,7 +6,7 @@ const Home = () => {
     const {products} = useSelector(state => state.ProductsReducer);
     return (
         <div>
-            <div className="container" style={{paddingTop:"5rem"}}>
+            <div className="container" style={{paddingTop:"5rem"}} id="home">
                 <div className="row">
                     {products.map(product => (
                         <div className="col-3" key={product.id}>

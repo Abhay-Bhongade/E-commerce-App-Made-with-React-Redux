@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from "react-router-dom";
+import { Link, useParams,useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux"
 import currencyFormatter from "currency-formatter";
 import { BsDash, BsPlus } from "react-icons/bs";
 const Details = () => {
+    const navigate = useNavigate();
     const [quantity, setQuantity] = useState(1);
     const { id } = useParams();
     const dispatch = useDispatch();
@@ -45,7 +46,11 @@ const Details = () => {
                         <h4>Details</h4>
                         {product.desc}
                     </div>
+                    <div className="homeBtn">
+                       <button className='shopBtn' onClick={()=> navigate("/")}>Shop More</button>
+                    </div>
                 </div>
+
             </div>
         </div>
     )

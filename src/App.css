@@ -242,6 +242,27 @@ a {
 	padding-top: 15rem;
 }
 
+.homeBtn{
+	margin: 1rem;
+}
+ .shopBtn{
+	width: 150px;
+	height: 50px;
+		padding: 10px 15px;
+		background-color:#d00156;
+		color: white;
+		font-size: 1.2rem;
+		font-weight: 500;
+		cursor: pointer;
+}
+.shopBtn:hover{
+	background-color:#EA1D71;
+}
+.shopBtn1{
+	width: 250px;	
+	margin-top: 13rem;
+}
+
 @media (max-width: 1315px){
 	.nav__container{
 		padding: 0px 50px;
@@ -308,5 +329,8 @@ a {
 	.cartinfo{
 		font-size:22px;
 		padding-top: 10rem;
+	}
+	.shopBtn1{	
+		margin-top: 7rem;
 	}
 }

@@ -1,9 +1,11 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import {useSelector, useDispatch} from "react-redux";
 import currencyFormatter from "currency-formatter";
 import {BsDash, BsPlus} from "react-icons/bs";
 import { BsReverseBackspaceReverse } from "react-icons/bs";
 const Cart = () => {
+    const navigate = useNavigate()
     const {products,totalQuantities,totalPrice} = useSelector(state => state.CartReducer);
     const dispatch = useDispatch();
     return (
@@ -87,7 +89,9 @@ const Cart = () => {
                         </div>
                     </div>
                 </div>
-                </> : <h2 className='cartinfo'>No items in your cart!</h2>}
+                </> : <div className='cartinfo'><h2>No items in your cart!</h2>
+                            <button className='shopBtn shopBtn1' onClick={()=>navigate("/")}>Start Shopping</button>
+                </div>}
                
 
             </div>
