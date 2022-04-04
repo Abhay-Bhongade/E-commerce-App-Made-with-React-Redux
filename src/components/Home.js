@@ -12,7 +12,7 @@ const Home = () => {
                         <div className="col-3" key={product.id}>
                             <div className="product">
                                 <div className="product__img">
-                                    <Link to={`/details/${product.id}`}><img src={`/images/${product.image}`} alt="image name"/></Link>
+                                    <Link to={`/details/${product.id}`}><img src={`/images/${product.image}`} alt="wait"/></Link>
                                 </div>
                                 <div className="product__name">
                                     {product.name}
