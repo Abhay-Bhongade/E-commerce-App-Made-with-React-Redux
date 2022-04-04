@@ -237,6 +237,11 @@ a {
 	text-transform: uppercase;
 }
 
+.cartinfo{
+	text-align: center;
+	padding-top: 15rem;
+}
+
 @media (max-width: 1315px){
 	.nav__container{
 		padding: 0px 50px;
@@ -299,5 +304,9 @@ a {
 	}
 	.nav__container{
 		padding: 0px 0px;
+	}
+	.cartinfo{
+		font-size:22px;
+		padding-top: 10rem;
 	}
 }

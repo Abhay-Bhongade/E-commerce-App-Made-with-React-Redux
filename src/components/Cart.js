@@ -9,7 +9,7 @@ const Cart = () => {
     return (
         <div className="cart">
             <div className="container">
-                <h3>Your cart</h3>
+                {/* <h3 className='maincart'>Your cart</h3> */}
                 {products.length > 0 ? <>
                 <div className="row">
                     <div className="col-9">
@@ -87,7 +87,7 @@ const Cart = () => {
                         </div>
                     </div>
                 </div>
-                </> : 'Your cart is empty!'}
+                </> : <h2 className='cartinfo'>No items in your cart!</h2>}
                
 
             </div>
